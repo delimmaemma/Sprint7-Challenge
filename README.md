@@ -47,16 +47,16 @@ npm i react-router-dom@5.3.4
 
 Your finished project must include all of the following requirements:
 
-- [ ] The `App` component is wrapped in `BrowserRouter` - complete this requirement in the `index.js` module
-- [ ] A homepage that has a "/" route and links to your form (button, nav bar, or any other type of link is acceptable but must have an id of "order-pizza")
-- [ ] A order form that has a "/pizza" route and shows the form
-- [ ] A form with an id of "pizza-form"
-- [ ] A name text input field with an id of "name-input"
-- [ ] Validation for name and the error message is "name must be at least 2 characters" (Use this exact error message to make sure tests pass) ::: VERY IMPORTANT TO USE THAT EXACT ERROR MESSAGE (casing included!)
-- [ ] A dropdown for pizza size with an id of "size-dropdown"
-- [ ] A checklist for toppings - at least 4 (hint: name each separately!)
-- [ ] Text input for special instructions with an id of "special-text"
-- [ ] An Add to Order button that has an id of "order-button" and that submits the form and returns a database record of name, size, toppings and special instructions
+- [X] The `App` component is wrapped in `BrowserRouter` - complete this requirement in the `index.js` module
+- [X] A homepage that has a "/" route and links to your form (button, nav bar, or any other type of link is acceptable but must have an id of "order-pizza")
+- [X] A order form that has a "/pizza" route and shows the form
+- [X] A form with an id of "pizza-form"
+- [X] A name text input field with an id of "name-input"
+- [X] Validation for name and the error message is "name must be at least 2 characters" (Use this exact error message to make sure tests pass) ::: VERY IMPORTANT TO USE THAT EXACT ERROR MESSAGE (casing included!)
+- [X] A dropdown for pizza size with an id of "size-dropdown"
+- [X] A checklist for toppings - at least 4 (hint: name each separately!)
+- [X] Text input for special instructions with an id of "special-text"
+- [X] An Add to Order button that has an id of "order-button" and that submits the form and returns a database record of name, size, toppings and special instructions
 
 Data should look something like
 ```
@@ -74,9 +74,9 @@ Note - your payload should look similar to the above data
 
 Implement the following tests in Cypress:
 
-- [ ] test that you can add text to the box
-- [ ] test that you can select multiple toppings
-- [ ] test that you can submit the form
+- [X] test that you can add text to the box
+- [X] test that you can select multiple toppings
+- [X] test that you can submit the form
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
