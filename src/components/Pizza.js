@@ -6,7 +6,7 @@ import {form} from '../data/data'
 
 const Pizza = () => {
     const [formState, setFormState] = useState(form)
-    const [users, setUsers] = useState([])
+    const [orders, setOrders] = useState([])
     const [errors, setErrors] = useState({
         name: '',
         size: '',
@@ -21,9 +21,9 @@ const Pizza = () => {
         e.preventDefault()
         console.log('Submitted!')
         axios
-            .post(`https://reqres.in/api/users`, formState)
+            .post(`https://reqres.in/api/orders`, formState)
             .then(res => {
-                setUsers(res.data)
+                setOrders(res.data)
                 console.log('success ', res)
             })
             .catch(err => {
@@ -203,14 +203,14 @@ const Pizza = () => {
                 <label htmlFor='order-button'><br/><br/>
                     <input
                         type='submit'
-                        id='submit'
+                        id='order-button'
                         name='submit'
                         value='Add to Order'
                         disabled={setButtonDisabled()}
                     />
                 </label>
             </form>
-            <pre>{JSON.stringify(users, null, 2)}</pre>
+            <pre>{JSON.stringify(orders, null, 2)}</pre>
         </div>
 
     )

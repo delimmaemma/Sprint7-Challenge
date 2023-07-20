@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home">
             <div className='motto-container pizza'>
                 <h2 className='motto'>Your favorite food, delivered while coding</h2>
-                <p className='suggestion suggestion-btn' onClick={() => pizzaTime()}><span>Pizza?</span></p>
+                <p className='suggestion suggestion-btn' id='order-pizza' onClick={() => pizzaTime()}><span>Pizza?</span></p>
             </div>
             <div className='selections'>
                 <p className='location'>Food Delivery in Gotham City</p>

@@ -64,5 +64,7 @@ describe('Can submit form', () => {
         cy.get('#topping1').click()
         cy.get('#special-text').should('be.visible')
         cy.get('#special-text').type('None')
+        cy.get('#order-button').should('be.enabled')
+        cy.get('#order-button').click()
     })
 })
